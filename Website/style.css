@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+
+/* Cursor animation */
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2px black solid;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: grayscale();
+}
+
+.color-link {
+    color: whitesmoke;
+}
+
+.link-grow {
+    transform: scale(2);
+    background: black;
+}
+
+body {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 800px;
+    background-image: url("./Image/imani-bahati-LxVxPA1LOVM-unsplash.jpg");
+    background-attachment: fixed;
+    background-position: 50% 47%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.menu-bar ul li {
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar .logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-bar .menu-bar {
+    position: relative;
+    margin-left: -20px;
+    flex-grow: 2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar .icon {
+    flex-grow: 1;
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    border-bottom: 2px #404243 solid;
+    border-radius: 15px;
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+
+.menu-bar ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-bar ul li:hover {
+    opacity: 2;
+    transform: translateY(-15px);
+}
+
+.menu-bar li:hover a{
+    color:  #d1d1e0;
+    cursor: none;
+}
+
+.icon .icon-left span {
+    color: black;
+}
+
+.icon .icon-right span {
+    color: black;
+}
+
+.icon .icon-left {
+    flex-grow: 1;
+}
+
+.icon .icon-right {
+    flex-grow: 1;
+}
+
+.icon > div {
+    position: relative;
+}
+
+.icon .icon-left span:nth-child(2) {
+    text-transform: capitalize;
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon .icon-right span:nth-child(2){
+    text-transform: capitalize;
+    position: absolute;
+    top: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon .icon-left span:nth-child(2):hover {
+    transition: all 0.75s ease;
+    color:  #0088a9;
+}
+
+.icon .icon-right span:nth-child(2):hover {
+    transition: all 0.75s ease;
+    color:  #0088a9;
+
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px;
+}
+
+
+body section:nth-child(5){
+    grid-template-rows: 500px;
+} 
+
+body div.border-bot:nth-child(7) {
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(4,63,94,1) 53%, rgba(8,122,181,1) 76%);
+}
+
+.border-bot {
+    max-width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(252,208,5,1) 76%);
+}
+.section-left-one { 
+    height: 26.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-caption {
+    width: 395px;
+    height: 102px;
+    font-family: 'RocknRoll One', sans-serif;  
+    font-size: 25px; 
+}
+
+.ad-product {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 15px;
+    width: 395px;
+    height: 81px;
+}
+
+
+/* Css caption hover */
+.grid {
+	padding: 20px 20px 10px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 435px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {      
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #2c3f52;
+	color: #ed4e6e;
+}
+
+.grid figcaption h3, span {
+	margin: 0;
+	padding: 0.5em;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+
+.cs-style-6 figure img {
+	z-index: 10;
+	transition: transform 0.4s;
+}
+
+.cs-style-6 figure:hover img,
+.cs-style-6 figure.cs-hover img {
+	transform: translateY(-50px) scale(0.5);
+}
+
+.cs-style-6 figcaption {
+	height: 100%;
+	width: 100%;
+}
+
+.cs-style-6 figcaption h3 {
+	margin-top: 77%;
+}
+
+.cs-style-6 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.title-product-ad {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.grid-product-container {
+    padding-top: 2.5em;
+    display: grid;
+    grid-template-columns: 43% 57%;
+    grid-template-rows: 200px;
+}
+
+.grid-product-container .product-title {
+    padding: 0 110px;
+    text-align: left;
+}
+
+.grid-product-container .product-title h1 {
+    font-family: 'IBM Plex Serif', serif;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.grid-product-container .product-title .count {
+    width: 40px;
+    height: 40px;
+}
+
+.grid-product-container .product-title h2 {
+    font-family: 'IBM Plex Serif', serif;
+    border: 1px black solid;    
+    text-align: center;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-left: 5px;
+    transform: rotate(90deg) translateY(-95%);
+    transform-origin: left top;
+}
+
+.grid-product-container .product-title h5 {
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Train One', cursive;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: black; 
+    margin-left: 5px;
+    padding: 0;
+    text-decoration: underline;
+    transform: rotate(90deg) translateY(-85%);
+    transform-origin: left top;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.product-down {
+    margin-top: 2em;
+} 
+
+.product-second > a {
+    display: flex;
+    justify-content: center;
+}
+
+.description {
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Train One', cursive;
+    font-size: 12px;
+    color: black;
+    margin-left: 5px;
+    padding: 0;
+}
